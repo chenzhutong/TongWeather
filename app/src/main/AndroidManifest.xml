@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tongweather.android">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+<!--android:name=".TongWeatherApplication" 用于告诉系统启动时初始化TongWeatherApplication类-->
     <application
+        android:name=".TongWeatherApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
