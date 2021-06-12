@@ -24,4 +24,12 @@ class PlaceViewModel : ViewModel() {
         searchLiveData.value = query
         //该方法得到返回值并返回到searchLiveData中
     }
+
+    //placeDao,Repository()
+
+    fun savePlace(place: Place) = Repository.savePlace(place)
+
+    fun getSavePlace() = Repository.getSavePlace()
+
+    fun isSavedPlace() = Repository.isPlaceSaved()
 }
